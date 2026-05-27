@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "拷贝漫画下载助手",
+  "version": "1.0",
+  "description": "一键发送漫画章节URL到Python下载程序",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.mangacopy.com/comic/*/chapter/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["http://localhost:5000/*"]
+}

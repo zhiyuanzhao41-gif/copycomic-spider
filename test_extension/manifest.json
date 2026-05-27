@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "测试漫画助手",
+  "version": "1.0",
+  "description": "测试注入",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["test.js"]
+    }
+  ]
+}

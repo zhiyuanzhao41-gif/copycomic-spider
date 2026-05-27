@@ -1,0 +1,48 @@
+/* 下载按钮样式 */
+#manga-download-btn {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999999 !important; /* 强制最高层级，防止被页面元素挡住 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+#manga-download-btn:hover {
+  background: #1d4ed8;
+}
+
+#manga-download-btn::after {
+  content: "下载";
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* 加载/成功/失败提示 */
+#manga-download-tip {
+  position: fixed;
+  right: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 14px;
+  z-index: 999998 !important;
+  display: none;
+}
